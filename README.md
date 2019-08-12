@@ -10,8 +10,8 @@ NEUGELBMovies is an iOS application built as interview task at NEUGELB. Built Us
 
 1. Clone the porject.
 2. Navigate to project folder in terminal.
-3. Run `pod install`
-4. Provide your TMDB (The Movie Database) API key when asked (while install cocoapods)
+3. Install `Cocoapods-Keys`, `gem install cocoapods-keys`.
+4. Run `pod install`, and provide your TMDB API Key. Use this one if you don't have one `a88f75696733e2f7e60e7c9cb6b81a34`.
 
 ### High Level Layers
 
