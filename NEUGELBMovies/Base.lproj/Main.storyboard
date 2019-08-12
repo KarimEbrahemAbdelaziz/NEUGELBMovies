@@ -13,7 +13,7 @@
         <!--Movies View Controller-->
         <scene sceneID="Fd9-y9-K74">
             <objects>
-                <viewController id="QoM-le-lh8" customClass="MoviesViewController" customModule="SWVLMovies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QoM-le-lh8" customClass="MoviesViewController" customModule="NEUGELBMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vel-tR-162">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="116" width="414" height="746"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" rowHeight="290" id="6Rl-J5-r9P" customClass="MovieCell" customModule="SWVLMovies" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" rowHeight="290" id="6Rl-J5-r9P" customClass="MovieCell" customModule="NEUGELBMovies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="290"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Rl-J5-r9P" id="8rs-iL-UAV">
@@ -130,7 +130,7 @@
         <!--Movie Details View Controller-->
         <scene sceneID="vcP-8H-ORU">
             <objects>
-                <viewController id="Bnh-bL-Qjb" customClass="MovieDetailsViewController" customModule="SWVLMovies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Bnh-bL-Qjb" customClass="MovieDetailsViewController" customModule="NEUGELBMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YDv-Vu-hM7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,6 +180,7 @@
                                                 <rect key="frame" x="122" y="295.5" width="170" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" constant="170" id="pM5-ji-Nf1"/>
                                                     <constraint firstAttribute="height" constant="30" id="zE7-g7-cAd"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
