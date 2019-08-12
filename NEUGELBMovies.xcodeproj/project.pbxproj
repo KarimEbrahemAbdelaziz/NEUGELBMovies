@@ -143,6 +143,7 @@
 				BC3FAFE82301B5EB001D7577 /* Resources */,
 				BC3FAFF12301B920001D7577 /* Core */,
 				BC3FB0002301BBB5001D7577 /* EntityGateways */,
+				BC3FB0102301C045001D7577 /* Scenes */,
 				BC3FAFBB2301B3A0001D7577 /* ViewController.swift */,
 				BC3FAFBD2301B3A0001D7577 /* Main.storyboard */,
 				BC3FAFC22301B3A1001D7577 /* LaunchScreen.storyboard */,
@@ -296,6 +297,13 @@
 				BC3FB00E2301BC74001D7577 /* URL+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC3FB0102301C045001D7577 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		C5FAB43AB39BFDCB5A370741 /* Frameworks */ = {
