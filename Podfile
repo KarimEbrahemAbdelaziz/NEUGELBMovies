@@ -25,6 +25,13 @@ target 'NEUGELBMovies' do
 
 end
 
+plugin 'cocoapods-keys', {
+  :project => "NEUGELBMovies",
+  :keys => [
+  "TMDBAPIKey"
+  ]
+}
+
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     if ['ModernSearchBar'].include? target.name
