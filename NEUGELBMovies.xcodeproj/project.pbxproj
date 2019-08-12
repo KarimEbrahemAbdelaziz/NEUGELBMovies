@@ -21,6 +21,11 @@
 		BC3FAFFB2301B9DC001D7577 /* SearchAboutMovieGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FAFFA2301B9DC001D7577 /* SearchAboutMovieGateway.swift */; };
 		BC3FAFFD2301B9F0001D7577 /* DisplayLatestMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FAFFC2301B9F0001D7577 /* DisplayLatestMovies.swift */; };
 		BC3FAFFF2301BA08001D7577 /* SearchAboutMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FAFFE2301BA08001D7577 /* SearchAboutMovie.swift */; };
+		BC3FB0052301BBE7001D7577 /* APIMoviesGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB0042301BBE7001D7577 /* APIMoviesGateway.swift */; };
+		BC3FB0072301BBFA001D7577 /* APIMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB0062301BBFA001D7577 /* APIMovie.swift */; };
+		BC3FB0092301BC14001D7577 /* MoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB0082301BC14001D7577 /* MoviesRouter.swift */; };
+		BC3FB00B2301BC22001D7577 /* MoviesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB00A2301BC22001D7577 /* MoviesManager.swift */; };
+		BC3FB00F2301BC74001D7577 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB00E2301BC74001D7577 /* URL+Extensions.swift */; };
 		D4E1DA6161155058E27A13CF /* Pods_NEUGELBMoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4FB0B9A21A572040728392 /* Pods_NEUGELBMoviesTests.framework */; };
 		F0810F50FE37E794F2CDC53D /* Pods_NEUGELBMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB0D58785C73D743EFF7D20 /* Pods_NEUGELBMovies.framework */; };
 		FBA22A4E11F35E5E986D51A0 /* Pods_NEUGELBMoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481C10D21C9E79A5F794457A /* Pods_NEUGELBMoviesUITests.framework */; };
@@ -73,6 +78,11 @@
 		BC3FAFFA2301B9DC001D7577 /* SearchAboutMovieGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAboutMovieGateway.swift; sourceTree = "<group>"; };
 		BC3FAFFC2301B9F0001D7577 /* DisplayLatestMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLatestMovies.swift; sourceTree = "<group>"; };
 		BC3FAFFE2301BA08001D7577 /* SearchAboutMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAboutMovie.swift; sourceTree = "<group>"; };
+		BC3FB0042301BBE7001D7577 /* APIMoviesGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMoviesGateway.swift; sourceTree = "<group>"; };
+		BC3FB0062301BBFA001D7577 /* APIMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMovie.swift; sourceTree = "<group>"; };
+		BC3FB0082301BC14001D7577 /* MoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRouter.swift; sourceTree = "<group>"; };
+		BC3FB00A2301BC22001D7577 /* MoviesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesManager.swift; sourceTree = "<group>"; };
+		BC3FB00E2301BC74001D7577 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +138,11 @@
 		BC3FAFB82301B3A0001D7577 /* NEUGELBMovies */ = {
 			isa = PBXGroup;
 			children = (
+				BC3FB00C2301BC5F001D7577 /* Utilities */,
 				BC3FAFE72301B5E2001D7577 /* Application */,
 				BC3FAFE82301B5EB001D7577 /* Resources */,
 				BC3FAFF12301B920001D7577 /* Core */,
+				BC3FB0002301BBB5001D7577 /* EntityGateways */,
 				BC3FAFBB2301B3A0001D7577 /* ViewController.swift */,
 				BC3FAFBD2301B3A0001D7577 /* Main.storyboard */,
 				BC3FAFC22301B3A1001D7577 /* LaunchScreen.storyboard */,
@@ -233,6 +245,57 @@
 				BC3FAFF62301B982001D7577 /* Movie.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		BC3FB0002301BBB5001D7577 /* EntityGateways */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FB0012301BBC6001D7577 /* Network */,
+			);
+			path = EntityGateways;
+			sourceTree = "<group>";
+		};
+		BC3FB0012301BBC6001D7577 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FB0022301BBCD001D7577 /* API */,
+				BC3FB0032301BBD1001D7577 /* Entities */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BC3FB0022301BBCD001D7577 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FB0042301BBE7001D7577 /* APIMoviesGateway.swift */,
+				BC3FB0082301BC14001D7577 /* MoviesRouter.swift */,
+				BC3FB00A2301BC22001D7577 /* MoviesManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BC3FB0032301BBD1001D7577 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FB0062301BBFA001D7577 /* APIMovie.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BC3FB00C2301BC5F001D7577 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FB00D2301BC66001D7577 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BC3FB00D2301BC66001D7577 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FB00E2301BC74001D7577 /* URL+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C5FAB43AB39BFDCB5A370741 /* Frameworks */ = {
@@ -422,6 +485,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-NEUGELBMovies/Pods-NEUGELBMovies-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/Keys/Keys.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ModernSearchBar/ModernSearchBar.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -433,6 +497,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Keys.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ModernSearchBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -494,9 +559,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3FB0052301BBE7001D7577 /* APIMoviesGateway.swift in Sources */,
+				BC3FB00F2301BC74001D7577 /* URL+Extensions.swift in Sources */,
+				BC3FB0092301BC14001D7577 /* MoviesRouter.swift in Sources */,
 				BC3FAFBC2301B3A0001D7577 /* ViewController.swift in Sources */,
+				BC3FB0072301BBFA001D7577 /* APIMovie.swift in Sources */,
 				BC3FAFFF2301BA08001D7577 /* SearchAboutMovie.swift in Sources */,
 				BC3FAFBA2301B3A0001D7577 /* AppDelegate.swift in Sources */,
+				BC3FB00B2301BC22001D7577 /* MoviesManager.swift in Sources */,
 				BC3FAFFD2301B9F0001D7577 /* DisplayLatestMovies.swift in Sources */,
 				BC3FAFF92301B99C001D7577 /* LatestMoviesGateway.swift in Sources */,
 				BC3FAFFB2301B9DC001D7577 /* SearchAboutMovieGateway.swift in Sources */,

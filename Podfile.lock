@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.8.2)
   - Cosmos (19.0.3)
+  - Keys (1.0.1)
   - Kingfisher (5.7.0)
   - ModernSearchBar (1.5)
   - ObjectMapper (3.5.1)
@@ -9,6 +10,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.8.2)
   - Cosmos (~> 19.0)
+  - Keys (from `Pods/CocoaPodsKeys`)
   - Kingfisher (~> 5.0)
   - ModernSearchBar (~> 1.5)
   - ObjectMapper (~> 3.4)
@@ -23,14 +25,19 @@ SPEC REPOS:
     - ObjectMapper
     - SkeletonView
 
+EXTERNAL SOURCES:
+  Keys:
+    :path: Pods/CocoaPodsKeys
+
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Cosmos: a6fb17284281fa12cf4c85c2efecd440a215ec44
+  Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
   Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
   ModernSearchBar: 5dd19c94b1e04f1f83dd9b9950d05153ef2535e5
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   SkeletonView: 7d7378731b708f8a6e6b1ffefb68cc3903f10a03
 
-PODFILE CHECKSUM: 44622edaef3b43ecf23b081f04bebded542f5139
+PODFILE CHECKSUM: a39dc8e7c2518c49885082adec607fe05298f240
 
 COCOAPODS: 1.6.2
