@@ -114,12 +114,11 @@
 		BC3FAFB82301B3A0001D7577 /* NEUGELBMovies */ = {
 			isa = PBXGroup;
 			children = (
-				BC3FAFB92301B3A0001D7577 /* AppDelegate.swift */,
+				BC3FAFE72301B5E2001D7577 /* Application */,
+				BC3FAFE82301B5EB001D7577 /* Resources */,
 				BC3FAFBB2301B3A0001D7577 /* ViewController.swift */,
 				BC3FAFBD2301B3A0001D7577 /* Main.storyboard */,
-				BC3FAFC02301B3A1001D7577 /* Assets.xcassets */,
 				BC3FAFC22301B3A1001D7577 /* LaunchScreen.storyboard */,
-				BC3FAFC52301B3A1001D7577 /* Info.plist */,
 			);
 			path = NEUGELBMovies;
 			sourceTree = "<group>";
@@ -142,6 +141,23 @@
 			path = NEUGELBMoviesUITests;
 			sourceTree = "<group>";
 		};
+		BC3FAFE72301B5E2001D7577 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FAFB92301B3A0001D7577 /* AppDelegate.swift */,
+				BC3FAFC52301B3A1001D7577 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BC3FAFE82301B5EB001D7577 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FAFC02301B3A1001D7577 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C5FAB43AB39BFDCB5A370741 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +178,6 @@
 				57018F8FB260F1685144192D /* Pods-NEUGELBMoviesUITests.debug.xcconfig */,
 				B2C163878DB5FBA07647B2DB /* Pods-NEUGELBMoviesUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -580,7 +595,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NEUGELBMovies/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NEUGELBMovies/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,7 +614,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NEUGELBMovies/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NEUGELBMovies/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
