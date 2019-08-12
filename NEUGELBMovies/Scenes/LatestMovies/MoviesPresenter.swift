@@ -12,6 +12,7 @@ protocol MoviesView: AnyObject {
     func refreshMoviesView()
     func displayMoviesRetrievalError(title: String, message: String)
     func refreshAutoCompleteData()
+    func refreshSearchMoviesView()
 }
 
 protocol MovieCellView {
@@ -164,7 +165,7 @@ class MoviesPresenterImplementation: MoviesPresenter {
         if !movies.isEmpty {
             self.searchCurrentPage += 1
             self.searchResultMovies.append(contentsOf: movies)
-            self.view?.refreshMoviesView()
+            self.view?.refreshSearchMoviesView()
         }
     }
     

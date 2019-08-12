@@ -260,8 +260,8 @@
                     </view>
                     <connections>
                         <outlet property="backgroundMovieImage" destination="0Li-CK-zxu" id="vbe-BG-W1c"/>
-                        <outlet property="movieCastLabel" destination="uKY-4W-mAe" id="97m-Rh-3uu"/>
                         <outlet property="movieImage" destination="Yqk-mc-hUP" id="QCK-DY-aTw"/>
+                        <outlet property="movieOverviewLabel" destination="uKY-4W-mAe" id="WeT-PG-aAn"/>
                         <outlet property="movieRateCosmosView" destination="Twj-FM-btU" id="RKS-5T-e0t"/>
                         <outlet property="movieTitleLabel" destination="a29-T1-KID" id="t78-Hf-n9N"/>
                         <outlet property="movieYearLabel" destination="Dnm-Bv-r2Y" id="mMr-ET-3uQ"/>

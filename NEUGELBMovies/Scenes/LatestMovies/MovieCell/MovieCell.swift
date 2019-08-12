@@ -29,7 +29,7 @@ extension MovieCell: MovieCellView {
     func configure(with viewModel: MovieCellViewModel) {
         self.moviePoster.kf.indicatorType = .activity
         if !viewModel.moviePoster.isEmpty {
-            self.moviePoster.kf.setImage(with: URL(string: "https://image.tmdb.org/t/p/w500\(viewModel.moviePoster)")!, placeholder: UIImage(named: "moviePlaceholder"), options: [.transition(.fade(1))])
+            self.moviePoster.kf.setImage(with: URL(string: "https://image.tmdb.org/t/p/w500\(viewModel.moviePoster)")!, placeholder: UIImage(named: "moviePlaceholder"), options: [.transition(.fade(0.1))])
         } else {
             self.moviePoster.image = UIImage(named: "moviePlaceholder")
         }

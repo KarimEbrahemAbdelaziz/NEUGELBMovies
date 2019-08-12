@@ -140,6 +140,12 @@ extension MoviesViewController: MoviesView {
         moviesTableView.reloadData()
     }
     
+    func refreshSearchMoviesView() {
+        isFetchingMore = false
+        moviesTableView.reloadData()
+        moviesTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: UITableView.ScrollPosition.top, animated: false)
+    }
+    
     func displayMoviesRetrievalError(title: String, message: String) {
         presentAlert(withTitle: title, message: message)
     }

@@ -43,6 +43,10 @@
 		BC3FB0362301C35E001D7577 /* LatestMoviesViewRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB0352301C35E001D7577 /* LatestMoviesViewRouterSpy.swift */; };
 		BC3FB0382301C387001D7577 /* MovieCellViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB0372301C387001D7577 /* MovieCellViewSpy.swift */; };
 		BC3FB03A2301C3E3001D7577 /* SearchAboutMovieUseCaseStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB0392301C3E3001D7577 /* SearchAboutMovieUseCaseStub.swift */; };
+		BC3FB03C2301C550001D7577 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB03B2301C550001D7577 /* MovieDetailsViewController.swift */; };
+		BC3FB03E2301C569001D7577 /* MovieDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB03D2301C569001D7577 /* MovieDetailsPresenter.swift */; };
+		BC3FB0402301C57C001D7577 /* MovieDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB03F2301C57C001D7577 /* MovieDetailsConfigurator.swift */; };
+		BC3FB0422301C58B001D7577 /* MovieDetailsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB0412301C58B001D7577 /* MovieDetailsViewRouter.swift */; };
 		D4E1DA6161155058E27A13CF /* Pods_NEUGELBMoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4FB0B9A21A572040728392 /* Pods_NEUGELBMoviesTests.framework */; };
 		F0810F50FE37E794F2CDC53D /* Pods_NEUGELBMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB0D58785C73D743EFF7D20 /* Pods_NEUGELBMovies.framework */; };
 		FBA22A4E11F35E5E986D51A0 /* Pods_NEUGELBMoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481C10D21C9E79A5F794457A /* Pods_NEUGELBMoviesUITests.framework */; };
@@ -117,6 +121,10 @@
 		BC3FB0352301C35E001D7577 /* LatestMoviesViewRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestMoviesViewRouterSpy.swift; sourceTree = "<group>"; };
 		BC3FB0372301C387001D7577 /* MovieCellViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellViewSpy.swift; sourceTree = "<group>"; };
 		BC3FB0392301C3E3001D7577 /* SearchAboutMovieUseCaseStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAboutMovieUseCaseStub.swift; sourceTree = "<group>"; };
+		BC3FB03B2301C550001D7577 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		BC3FB03D2301C569001D7577 /* MovieDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsPresenter.swift; sourceTree = "<group>"; };
+		BC3FB03F2301C57C001D7577 /* MovieDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsConfigurator.swift; sourceTree = "<group>"; };
+		BC3FB0412301C58B001D7577 /* MovieDetailsViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +374,10 @@
 		BC3FB0122301C0D9001D7577 /* MovieDetails */ = {
 			isa = PBXGroup;
 			children = (
+				BC3FB03B2301C550001D7577 /* MovieDetailsViewController.swift */,
+				BC3FB03D2301C569001D7577 /* MovieDetailsPresenter.swift */,
+				BC3FB03F2301C57C001D7577 /* MovieDetailsConfigurator.swift */,
+				BC3FB0412301C58B001D7577 /* MovieDetailsViewRouter.swift */,
 			);
 			path = MovieDetails;
 			sourceTree = "<group>";
@@ -678,6 +690,7 @@
 				BC3FB0052301BBE7001D7577 /* APIMoviesGateway.swift in Sources */,
 				BC3FB00F2301BC74001D7577 /* URL+Extensions.swift in Sources */,
 				BC3FB0092301BC14001D7577 /* MoviesRouter.swift in Sources */,
+				BC3FB0422301C58B001D7577 /* MovieDetailsViewRouter.swift in Sources */,
 				BC3FB0272301C1CB001D7577 /* UIColor+Extensions.swift in Sources */,
 				BC3FAFBC2301B3A0001D7577 /* ViewController.swift in Sources */,
 				BC3FB0072301BBFA001D7577 /* APIMovie.swift in Sources */,
@@ -690,8 +703,11 @@
 				BC3FB0252301C1BF001D7577 /* UIViewController+Extensions.swift in Sources */,
 				BC3FB01B2301C151001D7577 /* MoviesPresenter.swift in Sources */,
 				BC3FB0192301C13B001D7577 /* MoviesViewController.swift in Sources */,
+				BC3FB03C2301C550001D7577 /* MovieDetailsViewController.swift in Sources */,
 				BC3FAFF92301B99C001D7577 /* LatestMoviesGateway.swift in Sources */,
+				BC3FB0402301C57C001D7577 /* MovieDetailsConfigurator.swift in Sources */,
 				BC3FB01D2301C163001D7577 /* MoviesConfigurator.swift in Sources */,
+				BC3FB03E2301C569001D7577 /* MovieDetailsPresenter.swift in Sources */,
 				BC3FB0202301C183001D7577 /* MoviesViewRouter.swift in Sources */,
 				BC3FAFFB2301B9DC001D7577 /* SearchAboutMovieGateway.swift in Sources */,
 				BC3FAFF72301B982001D7577 /* Movie.swift in Sources */,
